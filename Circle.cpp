@@ -11,12 +11,12 @@ Circle::Circle(const Circle & other)
     r_ = other.getRadius();
 }
 
-double Circle::getArea() const
+double Circle::getArea() const noexcept
 {
     return M_PI * r_ * r_;
 }
 
-double Circle::getPerimeter() const
+double Circle::getPerimeter() const noexcept
 {
     return 2 * M_PI * r_;
 }

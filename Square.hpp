@@ -8,8 +8,8 @@ public:
     Square(double x);
     Square(const Square & other);
 
-    double getArea();
-    double getPerimeter();
+    double getArea() noexcept;
+    double getPerimeter() noexcept;
     void print();
 
 private:

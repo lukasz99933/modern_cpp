@@ -8,8 +8,8 @@ public:
     Circle(double r);
     Circle(const Circle & other);
 
-    double getArea() const;
-    double getPerimeter() const;
+    double getArea() const noexcept;
+    double getPerimeter() const noexcept;
     double getRadius() const;
     void print() const;
 

@@ -9,12 +9,12 @@ Square::Square(const Square &other)
     : Rectangle(other.getX(), other.getX())
 {}
 
-double Square::getArea()
+double Square::getArea() noexcept
 {
     return getX() * getX();
 }
 
-double Square::getPerimeter()
+double Square::getPerimeter() noexcept
 {
     return 4 * getX();
 }
